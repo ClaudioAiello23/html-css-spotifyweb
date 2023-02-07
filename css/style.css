@@ -24,7 +24,14 @@ REGOLE COMMON
 ********************************************* 
 */
 
+/* Impostazione colori presenti nella bozza, con le variabili */
+:root{
+    --aside-bar-color: black;
+    --header-color: #080b12;
+    --footer-color: #282828;
+    --main-color: #141922;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
