@@ -47,6 +47,7 @@ REGOLE COMMON
     --aside-bar-color: black;
     --footer-color: #282828;
     --main-color: #141922;
+    --aside-icon-color: #d2d2d2;
 }
 
 body{
@@ -59,10 +60,26 @@ REGOLE ASIDE BAR
 ********************************************* 
 */
 
+main .main-aside-bar a{
+    color: var(--aside-icon-color);
+    font-size: 1.25rem;
+}
+
 main .main-aside-bar{
     background-color: var(--aside-bar-color);
     max-height: 92vh;
     min-width: 10%;
+}
+
+.main-aside-bar #logo{
+    color: white;
+    font-size: 1.875rem;
+}
+
+main .main-aside-bar{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -71,6 +88,12 @@ main .main-aside-bar{
 REGOLE MAIN CONTENT
 ********************************************* 
 */
+
+main .main-content{
+    overflow: auto;
+    height: inherit; /* altezza 92vh ereditata dal contenitore padre */
+}
+
 
 main .main-right{
     height: 92vh;
@@ -95,10 +118,6 @@ main .main-right button{
     background-color: inherit;
     border: 1px solid white;
     border-radius: 40px;
-}
-
-main .main-content{
-    overflow: auto;
 }
 
 main .menu-bar{
