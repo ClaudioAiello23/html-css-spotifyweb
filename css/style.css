@@ -61,9 +61,9 @@ REGOLE ASIDE BAR
 
 main .main-aside-bar{
     background-color: var(--aside-bar-color);
-    height: 92vh;
+    max-height: 92vh;
     min-width: 10%;
-    }
+}
 
 
 /* 
@@ -74,21 +74,21 @@ REGOLE MAIN CONTENT
 
 main .main-right{
     height: 92vh;
-    min-width: 90%;
+    max-width: 90%;
     background-color: var(--main-color);
     color: white;
 }
 
-.main-right .top-bar{
-        height: 8vh;
-        min-width: 90%;
-        padding: 15px 5px;
-        text-align: end;
-        background-color: rgba(0,0,0,0.7);
-        position: fixed;
-    }
+main .top-bar{
+    min-height: 8vh;
+    padding: 15px 5px;
+    text-align: end;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    min-width: 90%;
+}
 
-.main-right button{
+main .main-right button{
     color: white;
     font-weight: bold;
     padding: 8px 30px;
@@ -99,11 +99,11 @@ main .main-right{
 
 main .main-content{
     overflow: auto;
-    }
+}
 
-    main .menu-bar{
-        padding-top: 8vh;
-    }
+main .menu-bar{
+    padding-top: 8vh;
+}
 
     
 
@@ -114,7 +114,9 @@ REGOLE FOOTER
 */
 
 footer{
-    height: 8vh;
+    min-height: 8vh;
     background-color: var(--footer-color);
     color: white;
+    position: fixed;
+    width: 100%;
 }
