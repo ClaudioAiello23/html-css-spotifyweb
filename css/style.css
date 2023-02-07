@@ -1,4 +1,16 @@
 /* 
+Approccio Responsive: MOBILE FIRST
+
+Regole di Breakpoint:
+- xs: minore o uguale a 552px
+- sm: minore o uguale a 640px
+- md: minore o uguale a 878px
+- lg: maggiore di 878px
+*/
+
+
+
+/* 
 *********************************************
 REGOLE DI RESET
 ********************************************* 
