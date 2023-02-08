@@ -59,11 +59,19 @@ body a{
     font-weight: bold;
 }
 
+body li{
+    list-style: none;
+}
+
 /* 
 *********************************************
 REGOLE ASIDE BAR
 ********************************************* 
 */
+
+.main-container{
+    width:100%;
+}
 
 main .main-aside-bar{
     background-color: var(--aside-bar-color);
@@ -71,63 +79,78 @@ main .main-aside-bar{
     width: 10vw;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 0 5px;
 }
 
-main .main-aside-bar a{
-    color: var(--aside-icon-color);
-    font-size: 1.375rem;
+/* Inizio larghezza immagini */
+main .main-aside-bar img{
+    width: 1.5625rem;
 }
 
+.main-aside-bar #logo img{
+    width: 1.875rem;
+}
 
+.main-aside-bar #aside-arrow img{
+    width: 1rem;
+}
+/* Fine larghezza immagini */
+
+
+.aside-bottom{
+    margin-bottom: 10px;
+}
 
 .main-aside-bar #logo{
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .main-aside-bar #spotify-name{
     font-size: 1.375rem;
 }
 
-
-
-
-/* main .aside-top,
-main .aside-bottom{
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* main .aside-top ul li,
-main .aside-bottom ul li{
-    padding: 5px 0;
-    list-style: none;
-} */
-
-
-.aside-bottom #user-name{
-    color:white;
-    font-size: 1rem;
-}
-
 .hidden-name{
-    font-size: 1rem;
+    font-size: .875rem;
+    color: var(--aside-icon-color);
 }
+
 
 #create-playlist{
-    font-size: 1.125rem;
+    font-size: 1rem;
+    color: var(--aside-icon-color);
+    padding-left: 10px;
 }
 
 #playlist-title{
     color: white;
     font-weight: bold;
+    padding: 15px 10px;
+}
+
+.fa-square-plus{
+    padding-right: 5px;
+    font-size: 1.875rem;
+}
+
+#spotify-name, #user-name, #home span{
+    color: white;
+    font-weight: bold;
+}
+
+.main-aside-bar li{
+    padding: 8px 10px;
+}
+
+.bar-icons{
+    margin-right: 5px;
 }
 
 
 /* MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR */
 @media screen and (max-width: 552px) {
    
-    .hidden-name{
+    .main-aside-bar .hidden-name{
         display:none;
     }
 
@@ -136,12 +159,21 @@ main .aside-bottom ul li{
 
 @media screen and (min-width:553px) {
 
-    main .aside-top,
-    main .aside-bottom{
+    main .main-aside-bar{
+        width: 40vw;
         align-items: flex-start;
-}
+    }
+    
+    .main-aside-bar .hidden-name{
+        display: block;
+    }
+
+    .aside-bottom hr{
+        width: 25vw;
+    } 
 
 }
+
 
 /* 
 *********************************************
@@ -166,7 +198,7 @@ main .top-bar{
     padding: 15px 5px;
     background-color: rgba(0,0,0,0.7);
     position: fixed;
-    width: calc(100vw - 71px); /* larghezza 100vw meno larghezza AsideBar */
+    width: 90vw;
 }
 
 main .top-bar button{
