@@ -62,7 +62,7 @@ REGOLE ASIDE BAR
 
 main .main-aside-bar a{
     color: var(--aside-icon-color);
-    font-size: 1.25rem;
+    font-size: 1.375rem;
 }
 
 main .main-aside-bar{
@@ -73,13 +73,28 @@ main .main-aside-bar{
 
 .main-aside-bar #logo{
     color: white;
-    font-size: 1.875rem;
+    font-size: 2rem;
+    padding: 10px 0;
 }
 
 main .main-aside-bar{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+main .aside-top ul li,
+main .aside-bottom ul li{
+    padding: 5px 0;
+    list-style: none;
+}
+
+.main-aside-bar #aside-arrow{
+    font-size: 1.125rem;
+}
+
+.aside-bottom li:first-child{
+    padding-bottom: 15px;
 }
 
 
@@ -122,6 +137,17 @@ main .main-right button{
 
 main .menu-bar{
     padding-top: 8vh;
+}
+
+.menu-bar ul li{
+    list-style: none;
+    padding: 20px 10px;
+    width: calc(100%/4)
+}
+
+.menu-bar ul{
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
     
