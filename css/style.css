@@ -147,11 +147,12 @@ main .aside-bottom .hidden-name{
     main .aside-bottom{
         align-items: flex-start;
 }
+
 }
 
 /* 
 *********************************************
-REGOLE MAIN CONTENT
+REGOLE MAIN CENTRAL CONTENT
 ********************************************* 
 */
 
@@ -162,7 +163,6 @@ main .main-content{
 
 main .main-right{
     height: 92vh;
-    width: 90%;
     background-color: var(--main-color);
     color: white;
 }
@@ -170,13 +170,13 @@ main .main-right{
 main .top-bar{
     min-height: 8vh;
     padding: 15px 5px;
-    text-align: end;
     background-color: rgba(0,0,0,0.7);
     position: fixed;
-    min-width: 90%;
+    width: 90%;
+    justify-content: flex-end;
 }
 
-main .main-right button{
+main .top-bar button{
     color: white;
     font-weight: bold;
     padding: 8px 30px;
