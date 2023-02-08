@@ -128,12 +128,30 @@ main .aside-bottom .hidden-name{
 }
 
 .hidden-name{
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+#create-playlist{
+    font-size: 1.125rem;
+}
+
+.aside-top .playlist-bar{
+  flex-direction: column;
+}
+
+.aside-top .playlist-bar ul li a{
+    font-size: 1rem;
+}
+
+#playlist-title{
+    color: white;
+    font-weight: bold;
 }
 
 
 /* MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR */
 @media screen and (max-width: 552px) {
+   
     .hidden-name{
         display:none;
     }
@@ -147,6 +165,10 @@ main .aside-bottom .hidden-name{
     main .aside-bottom{
         align-items: flex-start;
 }
+
+    aside{
+        width: 500px;
+    }
 
 }
 
