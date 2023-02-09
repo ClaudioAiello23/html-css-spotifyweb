@@ -165,10 +165,6 @@ main .main-aside-bar img{
     margin-right: 5px;
 }
 
-.aside-hover-white:hover{
-    color:white;
-
-}
 
 
 /* 
@@ -211,9 +207,6 @@ main .top-bar button{
     border-radius: 40px;
 }
 
-main .top-bar button:hover{
-    transform: scale(1.1);
-}
 
 /* Ho dovuto usare margin-top: 100px per far partire il menu-bar sotto il top-main */
 main .menu-bar{
@@ -230,9 +223,6 @@ main .menu-bar{
     color:var(--aside-icon-color);
 }
 
-.menu-bar ul li a:hover{
-    color:white;
-} 
 
 .menu-bar ul{
     flex-wrap: wrap;
@@ -329,6 +319,16 @@ MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
     .albums-box article{
         width: calc(100%/6);
     }
+
+    .aside-hover-white:hover{
+        color:white;
+    
+    }
+
+    main .top-bar button:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 
@@ -379,10 +379,10 @@ footer{
     color: var(--aside-icon-color);
 }
 
-#f-single-track:hover,
-#f-track-name:hover{
-    color: white;
+.f-song-info a{
+    color: var(--aside-icon-color);
 }
+
 
 .f-favourite-box{
     flex-direction: column;
@@ -391,10 +391,6 @@ footer{
 
 .f-favourite-box a{
     color: var(--aside-icon-color);
-}
-
-.f-favourite-box a:hover{
-    color: white;
 }
 
 .f-player-tools{
@@ -411,11 +407,6 @@ footer{
 .fa-circle-play{
     font-size: 1.5rem;
 }
-
-.fa-circle-play:hover{
-    transform: scale(1.2);
-}
-
 
 .f-player-time li{
     font-size: .75rem;
@@ -501,5 +492,12 @@ MEDIA QUERIES RESPONSIVE - FOOTER
     padding: 20px 0 0 10px;
 }
    
+}
+
+@media screen and (min-width:879px){
+    .fa-circle-play:hover{
+        transform: scale(1.2);
+    }
+    
 }
 
