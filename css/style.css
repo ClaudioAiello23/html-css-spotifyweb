@@ -192,9 +192,11 @@ main .top-bar{
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     justify-content: flex-end;
+    align-items: center;
 }
 
 main .top-bar button{
+    height: 40px;
     color: white;
     font-weight: bold;
     padding: 8px 30px;
