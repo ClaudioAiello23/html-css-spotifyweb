@@ -131,6 +131,9 @@ main .main-aside-bar img{
     color: var(--aside-icon-color);
 }
 
+.aside-menu-icons span{
+    align-self:center;
+}
 
 #create-playlist{
     font-size: 1rem;
@@ -224,7 +227,6 @@ main .menu-bar{
     
 /* INIZIO SEZIONE ALBUMS - MAIN CENTRAL */
 
-
 .albums-container h1{
     font-size: 1.5625rem;
     font-weight: bold;
@@ -234,11 +236,10 @@ main .menu-bar{
 
 .albums-box{
     margin-top: 10px;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-article{
+.albums-box article{
     width: calc(100%/2);
     padding: 10px 5px;
 }
@@ -284,7 +285,6 @@ MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
 
 }
  
-
 @media screen and (min-width:553px) {
 
     main .main-aside-bar{
@@ -303,6 +303,17 @@ MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
    
 }
 
+@media screen and (min-width: 641px) {
+    .albums-box article{
+        width: calc(100%/4);
+    }
+}
+
+@media screen and (min-width: 878px) {
+    .albums-box article{
+        width: calc(100%/6);
+    }
+}
 
 
 /* 
@@ -313,7 +324,6 @@ REGOLE FOOTER
 
 footer{
     height: var(--footer-height);
-    min-width: 350px;
     background-color: var(--footer-color);
     color: white;
     position: fixed;
@@ -321,6 +331,7 @@ footer{
 }
 
 .footer-container{
+    height: var(--footer-height);
     align-items: center;
     justify-content: space-between;
     padding: 5px;
@@ -382,24 +393,31 @@ footer{
 
 .f-player-time{
     padding-bottom: 7px;
+    margin-left: 15px;
 }
 
-
-#f-start-time:after{
-    content: '___________________________';
-    font-size: .1875rem;
-    background-color: rgb(223, 211, 211);
-    border: 1px solid var(--aside-icon-color);
+#f-long-line{
+    height: 4px;
+    width: 80px;
+    background-color: var(--aside-icon-color);
     border-radius: 20px 0 0 20px;
 }
 
-#f-stop-time:before{
-    content: '___________________________________________________________';
-    font-size: .1875rem;
-    background-color: var(--aside-icon-color);
-    border: 1px solid var(--aside-icon-color);
-    border-radius: 0 20px 20px 0;
+#f-short-line{
+    height: 4px;
+    width: 20px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0;
 }
+
+.track-line > div{
+    display: inline-block;
+}
+
+.track-line{
+    margin: 0 10px;
+}
+
 
 .f-icon-tools li a{
     color: white;
@@ -408,15 +426,15 @@ footer{
 }
 
 .f-icon-tools{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-/* Altezza contenitore centrale Player footer */
+/* Larghezza contenitore centrale Player footer */
 .f-player-box {
     width: 200px;
 }
 
-/* Altezza contenitor laterali footer */
+/* Larghezza contenitor laterali footer */
 .f-track-box, .f-icons-box {
     width: 180px;
 }

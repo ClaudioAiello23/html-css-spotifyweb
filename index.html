@@ -31,9 +31,24 @@
                         <div id="spotify-name" class="hidden-name">Spotify</div>
                     </div>
                     <ul>
-                        <li ><a href="#" id="home" class="flex"><img src="img/home.svg" alt="home" class="bar-icons"><span class="hidden-name">Home</span></a></li>
-                        <li><a href="#" class="flex"><img src="img/search.svg" alt="search" class="bar-icons"><span class="hidden-name">Cerca</span></a></li>
-                        <li><a href="#" class="flex"><img src="img/libreria.svg" alt="library" class="bar-icons"><span class="hidden-name">La tua libreria</span></a></li>
+                        <li>
+                            <a href="#" id="home" class="aside-menu-icons flex">
+                                <img src="img/home.svg" alt="home" class="bar-icons">
+                                <span class="hidden-name">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside-menu-icons flex">
+                                <img src="img/search.svg" alt="search" class="bar-icons">
+                                <span class="hidden-name">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside-menu-icons flex">
+                                <img src="img/libreria.svg" alt="library" class="bar-icons">
+                                <span class="hidden-name">La tua libreria</span>
+                            </a>
+                        </li>
                     </ul>
                     <div class="playlist-bar hidden-name flex">
                         <div id="playlist-title">PLAYLIST</div>
@@ -53,9 +68,21 @@
                 <!-- Inizio menu barra laterale bottom -->
                 <div class="aside-bottom flex">
                     <ul>
-                        <li><a href="#" id="aside-arrow" class="flex"><img src="img/download.svg" alt="download" class="bar-icons"><span class="hidden-name">Installa App</span></a></li>
-                        <li><hr class="hidden-name"></li>
-                        <li><a href="#" class="flex"><img src="img/profile.svg" alt="user" class="bar-icons"><span id="user-name" class="hidden-name">John Doe</span></a></li>
+                        <li>
+                            <a href="#" id="aside-arrow" class="aside-menu-icons flex">
+                                <img src="img/download.svg" alt="download" class="bar-icons">
+                                <span class="hidden-name">Installa App</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="hidden-name">
+                        </li>
+                        <li>
+                            <a href="#" class="aside-menu-icons flex">
+                                <img src="img/profile.svg" alt="user" class="bar-icons">
+                                <span id="user-name" class="hidden-name">John Doe</span>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -85,6 +112,7 @@
                     <!-- Fine Menu main principale -->
                     <!-- Inizio sezione Albums -->
                     <div class="albums-container">
+                        <!-- Inizio sezione Played Recently -->
                         <h1>Recently played</h1>
                         <div class="albums-box flex">
                             <article>
@@ -118,6 +146,8 @@
                                 <div class="m-album-artist">Subtitle</div>
                             </article>
                         </div>
+                        <!-- Fine sezione Played Recently -->
+                        <!-- Inizio sezione Create for -->
                         <h1 class="central-title">Creato per John Doe</h1>
                         <h2>Più ascolti, più accurati saranno i tuoi suggerimenti.</h2>
                         <div class="albums-box flex">
@@ -130,6 +160,8 @@
                                 <div class="m-album-title">Daily Mix 1</div>
                             </article>
                         </div>
+                        <!-- Fine sezione Create for -->
+                        <!-- Inizio sezione Artisti popolari -->
                         <h1 class="central-title">Artisti più popolari</h1>
                         <h2>Più ascolti, più accurati saranno i tuoi suggerimenti.</h2>
                         <div class="albums-box circle-box flex">
@@ -142,6 +174,7 @@
                                 <div class="m-album-title">Einaudi</div>
                             </article>
                         </div>
+                        <!-- Fine sezione Artisti popolari -->
                     </div>
                     <!-- Fine sezione Albums -->
                 </section>
@@ -179,6 +212,10 @@
                 </ul>
                 <div class="f-player-time flex">
                     <li id="f-start-time">0:25 </li>
+                    <li class="track-line">
+                        <div id="f-short-line"></div>
+                        <div id="f-long-line"></div>
+                    </li> 
                     <li id="f-stop-time"> 4:35</li>
                 </div>
             </div>
@@ -188,7 +225,7 @@
                 <ul class="f-icon-tools flex">
                     <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-display"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-volume-high"></i>______</a></li>
+                    <li><a href="#"><i class="fa-solid fa-volume-high"></i></a></li> 
                 </ul>
             </div>
             <!-- Fine right container footer -->
