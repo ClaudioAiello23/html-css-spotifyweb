@@ -161,7 +161,9 @@ main .main-aside-bar img{
 }
 
 
-/* MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR */
+/* ---------------------------------------------
+MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR
+---------------------------------------------*/
 @media screen and (max-width: 552px) {
    
     .main-aside-bar .hidden-name{
@@ -338,7 +340,7 @@ footer{
 }
 
 #f-stop-time:before{
-    content: '________________________________________';
+    content: '___________________________________________________________';
     font-size: .1875rem;
     background-color: var(--aside-icon-color);
     border: 1px solid var(--aside-icon-color);
@@ -355,6 +357,47 @@ footer{
     justify-content: space-between;
 }
 
+/* Altezza contenitore centrale Player footer */
 .f-player-box {
-    width: 160px;
+    width: 200px;
 }
+
+/* Altezza contenitor laterali footer */
+.f-track-box, .f-icons-box {
+    width: 180px;
+}
+
+
+/* ---------------------------------------------
+MEDIA QUERIES RESPONSIVE - FOOTER 
+---------------------------------------------*/
+@media screen and (min-width:553px) {
+
+.f-song-info #f-single-track{
+    display: inline-block;
+}
+
+.f-song-info #f-track-name{
+    display: inline-block;
+}
+
+.f-song-info{
+    padding-right: 20px;
+}
+
+}
+
+
+@media screen and (min-width:641px) {
+
+.f-favourite-box{
+    flex-direction: row;
+}
+
+
+.f-favourite-box a{
+    padding: 20px 0 0 10px;
+}
+   
+}
+
