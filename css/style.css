@@ -165,8 +165,9 @@ main .main-aside-bar img{
     margin-right: 5px;
 }
 
-.main-aside-bar .playlist-bar a:hover{
+.aside-hover-white:hover{
     color:white;
+
 }
 
 
@@ -204,13 +205,14 @@ main .top-bar button{
     color: white;
     font-weight: bold;
     padding: 8px 30px;
+    margin-right: 20px;
     background-color: inherit;
     border: 1px solid white;
     border-radius: 40px;
 }
 
 main .top-bar button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Ho dovuto usare margin-top: 100px per far partire il menu-bar sotto il top-main */
@@ -377,6 +379,11 @@ footer{
     color: var(--aside-icon-color);
 }
 
+#f-single-track:hover,
+#f-track-name:hover{
+    color: white;
+}
+
 .f-favourite-box{
     flex-direction: column;
     justify-content:center;
@@ -384,6 +391,10 @@ footer{
 
 .f-favourite-box a{
     color: var(--aside-icon-color);
+}
+
+.f-favourite-box a:hover{
+    color: white;
 }
 
 .f-player-tools{
@@ -394,12 +405,17 @@ footer{
 
 .f-player-tools li a{
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .fa-circle-play{
     font-size: 1.5rem;
 }
+
+.fa-circle-play:hover{
+    transform: scale(1.2);
+}
+
 
 .f-player-time li{
     font-size: .75rem;
