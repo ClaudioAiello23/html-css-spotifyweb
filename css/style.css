@@ -78,9 +78,9 @@ body li{
 }
 
 /* 
-*********************************************
+*******************************************************************
 REGOLE ASIDE BAR
-********************************************* 
+*******************************************************************
 */
 
 .main-container{
@@ -197,6 +197,7 @@ REGOLE MAIN CENTRAL CONTENT
 ********************************************* 
 */
 
+
 main .main-content{
     overflow: auto;
     height: inherit; /* altezza 92vh ereditata dal contenitore padre */
@@ -248,12 +249,37 @@ main .menu-bar{
     justify-content: space-around;
 }
 
+
     
+/* INIZIO SEZIONE ALBUMS - MAIN CENTRAL */
+
+.central-title{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.albums-box{
+    height: 330px;
+    width: 210px;
+    background-color: red;
+}
+
+.album-image{
+    height: 210px;
+    width: 210px;
+    background-color: green;
+}
+
+
+
+
+
 
 /* 
-*********************************************
+*****************************************************************
 REGOLE FOOTER
-********************************************* 
+*****************************************************************
 */
 
 footer{
@@ -266,7 +292,6 @@ footer{
 }
 
 .footer-container{
-    height: 8vh;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
