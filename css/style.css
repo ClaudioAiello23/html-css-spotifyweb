@@ -278,6 +278,26 @@ main .menu-bar{
     border-radius: 100%;
 }
 
+.album-image{
+    position: relative;
+}
+
+.on-image{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    opacity: 0;
+}
+
+.album-image .fa-circle-play{
+    font-size: 3.75rem;
+    position: absolute;
+    color: white;
+    opacity: 0;
+}
+
 
 
 /* ------------------------------------------------------
@@ -327,6 +347,18 @@ MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
 
     main .top-bar button:hover{
         transform: scale(1.1);
+    }
+
+    .on-image:hover{
+        background-color:rgba(0,0,0,0.5);
+        opacity: 1;
+    }
+    
+    .on-image:hover .fa-circle-play{
+        opacity: 1;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
     }
 
 }
@@ -497,7 +529,11 @@ MEDIA QUERIES RESPONSIVE - FOOTER
 @media screen and (min-width:879px){
     .fa-circle-play:hover{
         transform: scale(1.2);
-    }
-    
+    }  
 }
+
+
+
+
+
 
