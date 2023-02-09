@@ -62,6 +62,8 @@ REGOLE COMMON
     --footer-color: #282828;
     --main-color: #141922;
     --aside-icon-color: #999999;
+    --footer-height: 100px;
+    --aside-width: 50px;
 }
 
 body{
@@ -77,20 +79,20 @@ body li{
     list-style: none;
 }
 
+main{
+    height: calc(100vh - var(--footer-height));
+}
+
 /* 
 *******************************************************************
 REGOLE ASIDE BAR
 *******************************************************************
 */
 
-.main-container{
-    width:100%;
-}
-
 main .main-aside-bar{
     background-color: var(--aside-bar-color);
-    height: 92vh;
-    width: 10vw;
+    max-height: calc(100vh - var(--footer-height));
+    width: var(--aside-width);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +178,7 @@ MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR
 @media screen and (min-width:553px) {
 
     main .main-aside-bar{
-        width: 40vw;
+        width: 230px;
         align-items: flex-start;
     }
     
@@ -197,25 +199,25 @@ REGOLE MAIN CENTRAL CONTENT
 ********************************************* 
 */
 
-
 main .main-content{
     overflow: auto;
-    height: inherit; /* altezza 92vh ereditata dal contenitore padre */
 }
 
 main .main-right{
-    height: 92vh;
-    width: 90vw;
+    height: calc(100vh - var(--footer-height));
+     /* inserita larghezza 100% (non 100vh perchè crea problemi con alcuni browser
+    meno la larghezza della barra aside per gestire la larghezza del main-right) */
+    width: calc(100% - var(--aside-width));
     background-color: var(--main-color);
     color: white;
 }
 
 main .top-bar{
-    min-height: 8vh;
+    height: 100px;
+    width: calc(100% - var(--aside-width));
     padding: 15px 5px;
     background-color: rgba(0,0,0,0.7);
     position: fixed;
-    width: 90vw;
 }
 
 main .top-bar button{
@@ -225,13 +227,11 @@ main .top-bar button{
     background-color: inherit;
     border: 1px solid white;
     border-radius: 40px;
-    margin-left: auto;
-   
 }
 
-/* Ho dovuto usare questa impostazione per far partire il menu-bar sotto il top-main */
+/* Ho dovuto usare margin-top: 100px per far partire il menu-bar sotto il top-main */
 main .menu-bar{
-    margin-top: 8vh;
+    margin-top: 100px;
 }
 
 .menu-bar ul li{
@@ -253,26 +253,29 @@ main .menu-bar{
     
 /* INIZIO SEZIONE ALBUMS - MAIN CENTRAL */
 
+.albums-container{
+    margin-left: 10px;
+}
+
 .central-title{
-    font-size: 30px;
-    padding: 10px;
+    font-size: 1.5625rem;
     font-weight: bold;
 }
 
 .albums-box{
-    height: 330px;
-    width: 210px;
-    background-color: red;
-}
-
-.album-image{
-    height: 210px;
-    width: 210px;
+    height: 250px;
+    margin-top: 30px;
     background-color: green;
+    justify-content: space-between;
 }
 
 
-
+.album-image img{
+    height: 190px;
+    width: 190px;
+    background-color: green;
+    border: 1px solid white;
+} 
 
 
 
@@ -283,7 +286,7 @@ REGOLE FOOTER
 */
 
 footer{
-    min-height: 8vh;
+    height: var(--footer-height);
     min-width: 350px;
     background-color: var(--footer-color);
     color: white;
