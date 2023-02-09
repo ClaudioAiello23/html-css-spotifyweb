@@ -225,9 +225,10 @@ main .menu-bar{
 /* INIZIO SEZIONE ALBUMS - MAIN CENTRAL */
 
 
-.central-title{
+.albums-container h1{
     font-size: 1.5625rem;
     font-weight: bold;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -251,12 +252,23 @@ article{
 .m-album-title{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .m-album-artist{
     text-align: center;
     color: var(--aside-icon-color);
+    font-size: .75rem;
+}
 
+.albums-container h2{
+    font-size: .75rem;
+    color: var(--aside-icon-color);
+    margin: 10px;
+}
+
+.circle-box img{
+    border-radius: 100%;
 }
 
 
