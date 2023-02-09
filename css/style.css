@@ -165,6 +165,10 @@ main .main-aside-bar img{
     margin-right: 5px;
 }
 
+.main-aside-bar .playlist-bar a:hover{
+    color:white;
+}
+
 
 /* 
 *********************************************
@@ -205,6 +209,10 @@ main .top-bar button{
     border-radius: 40px;
 }
 
+main .top-bar button:hover{
+    transform: scale(1.2);
+}
+
 /* Ho dovuto usare margin-top: 100px per far partire il menu-bar sotto il top-main */
 main .menu-bar{
     margin-top: 100px;
@@ -217,8 +225,12 @@ main .menu-bar{
 }
 
 .menu-bar ul li a{
-    color:#7d7f84;
+    color:var(--aside-icon-color);
 }
+
+.menu-bar ul li a:hover{
+    color:white;
+} 
 
 .menu-bar ul{
     flex-wrap: wrap;
