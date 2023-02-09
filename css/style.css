@@ -91,7 +91,7 @@ REGOLE ASIDE BAR
 
 main .main-aside-bar{
     background-color: var(--aside-bar-color);
-    max-height: calc(100vh - var(--footer-height));
+    height: calc(100vh - var(--footer-height));
     width: var(--aside-width);
     flex-direction: column;
     justify-content: space-between;
@@ -163,43 +163,13 @@ main .main-aside-bar img{
 }
 
 
-/* ---------------------------------------------
-MEDIA QUERIES RESPONSIVE - MAIN ASIDE BAR
----------------------------------------------*/
-@media screen and (max-width: 552px) {
-   
-    .main-aside-bar .hidden-name{
-        display:none;
-    }
-
-}
- 
-
-@media screen and (min-width:553px) {
-
-    main .main-aside-bar{
-        width: 230px;
-        align-items: flex-start;
-    }
-    
-    .main-aside-bar .hidden-name{
-        display: block;
-    }
-
-    .aside-bottom hr{
-        width: 25vw;
-    } 
-
-}
-
-
 /* 
 *********************************************
 REGOLE MAIN CENTRAL CONTENT
 ********************************************* 
 */
 
-main .main-content{
+main .main-right{
     overflow: auto;
 }
 
@@ -215,9 +185,10 @@ main .main-right{
 main .top-bar{
     height: 100px;
     width: calc(100% - var(--aside-width));
-    padding: 15px 5px;
+    padding: 15px;
     background-color: rgba(0,0,0,0.7);
     position: fixed;
+    justify-content: flex-end;
 }
 
 main .top-bar button{
@@ -276,6 +247,39 @@ main .menu-bar{
     background-color: green;
     border: 1px solid white;
 } 
+
+
+/* ------------------------------------------------------
+MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
+----------------------------------------------------------*/
+@media screen and (max-width: 552px) {
+   
+    .main-aside-bar .hidden-name{
+        display:none;
+    }
+
+}
+ 
+
+@media screen and (min-width:553px) {
+
+    main .main-aside-bar{
+        width: 230px;
+        align-items: flex-start;
+    }
+    
+    .main-aside-bar .hidden-name{
+        display: block;
+    }
+
+    main .top-bar,
+    main .main-right{
+        width: calc(100% - 230px);
+    }
+
+
+   
+}
 
 
 
