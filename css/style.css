@@ -224,29 +224,41 @@ main .menu-bar{
     
 /* INIZIO SEZIONE ALBUMS - MAIN CENTRAL */
 
-.albums-container{
-    margin-left: 10px;
-}
 
 .central-title{
     font-size: 1.5625rem;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .albums-box{
-    height: 250px;
-    margin-top: 30px;
-    background-color: green;
-    justify-content: space-between;
+    margin-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+article{
+    width: calc(100%/2);
+    padding: 10px 5px;
+}
 
 .album-image img{
-    height: 190px;
-    width: 190px;
-    background-color: green;
-    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
 } 
+
+.m-album-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.m-album-artist{
+    text-align: center;
+    color: var(--aside-icon-color);
+
+}
+
 
 
 /* ------------------------------------------------------
@@ -276,8 +288,6 @@ MEDIA QUERIES RESPONSIVE - MAIN (ASIDE BAR + MAIN-RIGHT)
     main .main-right{
         width: calc(100% - 230px);
     }
-
-
    
 }
 
