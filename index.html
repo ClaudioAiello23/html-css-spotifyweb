@@ -64,7 +64,7 @@
             <!-- Fine barra laterale Spotify -->
             <!-- Inizio sezione Main centrale  -->
             <div class="main-right">
-                <div class="top-bar">
+                <div class="top-bar flex">
                     <button type="button">EFFETTUA L'UPGRADE</button>
                 </div>
                 <div class="main-content">
@@ -130,9 +130,44 @@
     <!-- Inizio Footer -->
     <footer>
         <div class="footer-container flex">
-            <div>FOOTER-LEFT</div>
-            <div>FOOTER-CENTRAL</div>
-            <div>FOOTER-RIGHT</div>
+            <!-- Inizio left container footer -->
+            <div class="f-track-box flex">
+                <div class="f-song"><img src="img/sinister.jpeg" alt="song"></div>
+                <div class="f-song-info">
+                    <div id="f-band">Sinister</div>
+                    <div id="f-single-track">Brano</div>
+                    <div id="f-track-name">Nome</div>
+                </div>
+                <div class="f-favourite-box flex">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+            <!-- Fine left container footer -->
+            <!-- Inizio central container footer -->
+            <div class="f-player-box">
+                <ul class="f-player-tools flex">
+                    <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
+                </ul>
+                <div class="f-player-time flex">
+                    <li id="f-start-time">0:25 </li>
+                    <li id="f-stop-time"> 4:35</li>
+                </div>
+            </div>
+            <!-- Fine central container footer -->
+            <!-- Inizio right container footer -->
+            <div class="f-icons-box">
+                <ul class="f-icon-tools flex">
+                    <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-display"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-volume-high"></i>______</a></li>
+                </ul>
+            </div>
+            <!-- Fine right container footer -->
         </div>
     </footer>  
     <!-- Fine Footer -->

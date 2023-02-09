@@ -29,6 +29,20 @@ REGOLE SETUP (DA DISATTIVARE IN SEGUITO)
 ********************************************* 
 */
 
+/* .f-track-box{
+    background-color: rgb(44, 74, 172);
+    border: 1px dashed white;
+} */
+
+/* .f-player-box{
+    background-color: rgb(44, 74, 172);
+    border: 1px dashed white;
+} */
+
+/* .f-icons-box{
+    background-color: rgb(44, 74, 172);
+    border: 1px dashed white;
+} */
 
 
 
@@ -208,6 +222,8 @@ main .top-bar button{
     background-color: inherit;
     border: 1px solid white;
     border-radius: 40px;
+    margin-left: auto;
+   
 }
 
 /* Ho dovuto usare questa impostazione per far partire il menu-bar sotto il top-main */
@@ -240,6 +256,7 @@ REGOLE FOOTER
 
 footer{
     min-height: 8vh;
+    min-width: 350px;
     background-color: var(--footer-color);
     color: white;
     position: fixed;
@@ -247,9 +264,97 @@ footer{
 }
 
 .footer-container{
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.f-song{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.f-song img{
+    max-width: 100%;
+} 
+
+.f-song-info{
+    padding-right: 15px;
+}
+
+#f-band{
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+#f-single-track,
+#f-track-name{
+    font-size: .75rem;
+    color: var(--aside-icon-color);
+}
+
+.f-favourite-box{
+    flex-direction: column;
+    justify-content:center;
+}
+
+.f-favourite-box a{
+    color: var(--aside-icon-color);
+}
+
+.f-player-tools{
+    padding-bottom: 7px;
+    justify-content: space-between;
+
+}
+
+.f-player-tools li a{
+    color: white;
+    font-size: 16px;
+}
+
+.fa-circle-play{
+    font-size: 1.5rem;
+}
+
+.f-player-time li{
+    font-size: .75rem;
+}
+
+.f-player-time{
+    padding-bottom: 7px;
+}
+
+
+#f-start-time:after{
+    content: '___________________________';
+    font-size: .1875rem;
+    background-color: rgb(223, 211, 211);
+    border: 1px solid var(--aside-icon-color);
+    border-radius: 20px 0 0 20px;
+}
+
+#f-stop-time:before{
+    content: '________________________________________';
+    font-size: .1875rem;
+    background-color: var(--aside-icon-color);
+    border: 1px solid var(--aside-icon-color);
+    border-radius: 0 20px 20px 0;
+}
+
+.f-icon-tools li a{
+    color: white;
+    font-size: .875rem;
+    padding: 0 5px;
+}
+
+.f-icon-tools{
     justify-content: space-between;
 }
 
-.footer-container > div{
-    margin: auto;
+.f-player-box {
+    width: 160px;
 }
